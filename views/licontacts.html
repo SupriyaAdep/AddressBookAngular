@@ -1,0 +1,11 @@
+<div class="show-contact-icon pull-left">
+    <span class="glyphicon glyphicon-user"></span>
+</div>
+<span> {{contact.contactName}}</span>
+<button type="button" class="btn btn-sm btn-danger pull-right" ng-click="removeItem(item)">
+    <span class="glyphicon glyphicon-trash"></span>
+</button>
+
+<a href="#/addContact/edit/{{contact.id}}" class="btn btn-sm btn-default pull-right">
+    <span class="glyphicon glyphicon-pencil"></span>
+</a>
