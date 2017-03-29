@@ -14,11 +14,17 @@ body{
    padding: 10px 0 50px 0;
 }
 
-  .contact-list .list-group-item:last-child
-   {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-   }
+  .contact-list 
+  {
+    .list-group-item:last-child
+     {
+       border-bottom-right-radius: 0;
+       border-bottom-left-radius: 0;
+     }
+     .a:focus, a:hover{
+        text-decoration: none;
+     }
+  }
 
 .show-contact-icon{
     padding: 5px 10px;
@@ -76,6 +82,11 @@ body{
 .ng-invalid.ng-dirty{
     p{
         color: red;
+    }
+}
+.viewcontact{
+    table{ 
+        background-color: #fff;
     }
 }
 

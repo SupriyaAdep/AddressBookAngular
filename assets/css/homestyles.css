@@ -15,6 +15,9 @@ body {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
+.contact-list .a:focus, .contact-list a:hover {
+  text-decoration: none; }
+
 .show-contact-icon {
   padding: 5px 10px;
   font-size: 12px;
@@ -61,3 +64,6 @@ footer {
 
 .ng-invalid.ng-dirty p {
   color: red; }
+
+.viewcontact table {
+  background-color: #fff; }

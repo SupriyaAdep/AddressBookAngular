@@ -17,6 +17,10 @@ app.config(function($routeProvider, $locationProvider){
        	   templateUrl : "views/addContact.html",
        	   controller: "ContactsListCtrl"
         })
+        .when("/viewContact/view/:id", {
+           templateUrl : "views/viewContact.html",
+           controller: "ContactsListCtrl"
+        })
         .otherwise({
        	   redirectTo: "/"
         })
@@ -35,10 +39,10 @@ app.directive("saListItems", function(){
 app.service("ContactService", function(){
 	var contactService = {};
 	contactService.addressContacts = [
-	   {id: 1, contactName: "JKL Ipsum" , contactNo: "111111111"},
-	   {id: 2, contactName: "DEF Ipsum" , contactNo: "2222222222"},
-	   {id: 3, contactName: "GHI Ipsum" , contactNo: "3333333333"},
-	   {id: 4, contactName: "ABC Ipsum" , contactNo: "444444444"},
+	   {id: 1, contactName: "JKL Ipsum" , contactNo: 111111111},
+	   {id: 2, contactName: "DEF Ipsum" , contactNo: 2222222222},
+	   {id: 3, contactName: "GHI Ipsum" , contactNo: 3333333333},
+	   {id: 4, contactName: "ABC Ipsum" , contactNo: 444444444},
 	];
 
     contactService.getNewId = function(){
